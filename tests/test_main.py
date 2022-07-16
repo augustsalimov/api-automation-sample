@@ -2,14 +2,16 @@ import pytest
 import allure
 from email_validator import validate_email, EmailNotValidError
 from lib import MyAssert, MyRequests
-# from src.stdout import output_response
 
 
 @allure.epic("All tests")
 class TestAllTests:
-    USER = {('kojima', 'genius'), ('алекс', 'программист'), ('12563', '9786')}
-
-
+    USER = {
+        ('kojima', 'genius'),      # latin
+        ('алекс', 'программист'),  # cyrillic
+        ('12563', '9786')          # nums
+    }
+    
     @allure.title("Get user data")
     def test_get_user_data(self):
         response = MyRequests.get("/api/users?page=2")

@@ -21,17 +21,12 @@ Then install virtual environment and activate it:
 python3 -m venv venv
 source venv/bin/activate
 ```
-Optional. Update pip: `pip install -U pip`
+Optional. Update pip: `pip install -U pip` <br>
 Install all requirements: `pip install -r requirements.txt`
 
 ## How to run?
 
 To run use command: `pytest tests` <br>
-
-Options: <br>
-`--collect-only` - list of all tests; <br> 
-`-s` - to output all prints; <br>
-`-lf` - restart test that failed last time. <br>
 
 To generate allure report use commands:
 ```

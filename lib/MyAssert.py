@@ -1,6 +1,5 @@
 import json
 from requests import Response
-from pathlib import Path
 
 
 def json_check(response):
